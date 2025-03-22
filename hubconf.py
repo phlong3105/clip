@@ -1,6 +1,10 @@
-from clip.clip import tokenize as _tokenize, load as _load, available_models as _available_models
 import re
 import string
+
+from clip.clip import (
+	available_models as _available_models, load as _load,
+	tokenize as _tokenize,
+)
 
 dependencies = ["torch", "torchvision", "ftfy", "regex", "tqdm"]
 

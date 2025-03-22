@@ -2,12 +2,15 @@ import hashlib
 import os
 import urllib
 import warnings
-from packaging import version
-from typing import Union, List
+from typing import List, Union
 
 import torch
+from packaging import version
 from PIL import Image
-from torchvision.transforms import Compose, Resize, CenterCrop, ToTensor, Normalize
+from torchvision.transforms import (
+	CenterCrop, Compose, Normalize, Resize,
+	ToTensor,
+)
 from tqdm import tqdm
 
 from .model import build_model
